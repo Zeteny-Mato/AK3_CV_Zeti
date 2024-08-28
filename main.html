@@ -8,15 +8,26 @@
 </head>
 <body>
     <div class="contact-container">
-        <form action="" class="contect-left":>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left":>
             <div class="contact-left-title">
                 <h2>Get in touch</h2>
                 <hr>
             </div>
+            <input type="hidden" name="access_key" value="e6ba054c-0385-47aa-b72e-96f3cc32718f">
+
             <input type="text" name="name" placeholder="Your name" class="contact-inputs" required>
+
             <input type="email" name="email" placeholder="Your e-mail" class="contact-inputs" required>
+
             <textarea name="message" placeholder="Your message" class="contact-inputs" required></textarea>
-            <button type="submit">Submit <img src="assets/arrow_icon.png"></button>
+
+            <input type="text" name="address" class="contact-inputs" placeholder="Your address" required>
+
+            <input type="text" name="county" class="contact-inputs" placeholder="Your county" required>
+
+            <input type="text" name="city" class="contact-inputs" placeholder="Your city" required>
+
+            <button type="submit">Submit<img src="assets/arrow_icon.png"></button>
         </form>
         <div class="contact-right">
             <img src="assets/right_image.jpeg">
