@@ -6,7 +6,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(rgb(255, 229, 101), #FFF5FF);
+    background: linear-gradient(#ff9665, #ffe48c);
 }
 
 .contact-container{
@@ -50,6 +50,17 @@ body{
     border-radius: 50px;
 }
 
+.contact-date{
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 25px;
+}
+
 .contact-left textarea{
     height: 140px;
     padding-top: 15px;
@@ -83,6 +94,7 @@ body{
 
 .contact-right img{
     width: 500px;
+    border-radius: 25px;
 }
 
 @media (max-width:800px) {
