@@ -10,7 +10,7 @@
     <div class="contact-container">
         <form action="https://api.web3forms.com/submit" method="POST" class="contact-left":>
             <div class="contact-left-title">
-                <h2>Contact form</h2>
+                <h2>Learn about our latest news!</h2>
                 <hr>
             </div>
             <input type="hidden" name="access_key" value="e6ba054c-0385-47aa-b72e-96f3cc32718f">
@@ -18,6 +18,8 @@
             <input type="text" name="name" placeholder="Your name" class="contact-inputs" required>
 
             <input type="email" name="email" placeholder="Your e-mail" class="contact-inputs" required>
+
+            <input type="phone-number" name="phone-number" placeholder="Your phone number" class="contact-inputs" required>
 
             <textarea name="message" placeholder="Your message" class="contact-inputs" required></textarea>
 
@@ -27,7 +29,29 @@
 
             <input type="text" name="city" class="contact-inputs" placeholder="Your city" required>
 
-            <input type="date" name="date" id="dat" class="contact-date" required>
+
+            <div id="pi">
+                <div id="birth">
+                    <p>Your Birthdate:</p>
+    
+                    <input type="date" name="date" id="dat" class="contact-date" required>
+                </div>
+    
+                <div id="gender">
+    
+                    <p>Select your gender:</p>
+                    <div>
+                        <input type="radio" name="gender" id="male" value="male" required>
+                        <label for="male">Male</label>
+                    </div>
+    
+                    <div>
+                        <input type="radio" name="gender" id="female" value="female" required>
+                        <label for="female">Female</label>
+                    </div>
+    
+                </div>
+            </div>
 
             <button type="submit">Submit<img src="assets/arrow_icon.png"></button>
         </form>
