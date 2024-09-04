@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 20px;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #04aa4f;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Contact Form</h3>
+
+        <div class="container">
+            <form action="/action_page.php">
+                <label for="fname">First Name:</label>
+                <br>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="dat">Date of birth:</label>
+                <input type="date" id="dat" name="date">
+
+                <br>
+                <br>
+
+                <label for="dat">Male:</label>
+                <input type="radio" name="gender" id="gender" placeholder="Male">
+                <label for="dat">Female:</label>
+                <input type="radio" name="gender" id="gender" placeholder="Female">
+                <label for="dat">Other fairy tale creatures:</label>
+                <input type="radio" name="gender" id="gender" placeholder="Other fairy tale creatures">
+
+                <br>
+                <br>
+
+                <label for="adres">Address:</label>
+                <input type="text" id="adres" name="address" placeholder="Your address..">
+
+                <label for="cont">County:</label>
+                <input type="text" id="cont" name="county" placeholder="Your county..">
+
+                <label for="cit">City:</label>
+                <input type="text" id="cit" name="city" placeholder="Your city..">
+
+                <label for="subject">Subject:</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+</body>
+</html>
